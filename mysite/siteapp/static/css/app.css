@@ -1,5 +1,5 @@
 body {
-    background-color: #1A202C;
+    background-color: #fff;
 }
 
 h1 {
@@ -17,5 +17,15 @@ h1 {
     color: #4299E1;
 }
 .myBox {
-    border-radius: 1px;
+    border: 1px solid;
+    margin: 20%;
+    box-sizing: border-box;
+    padding:10%;
+    background-color: grey;
+}
+input{
+    margin-right: 10%;
+}
+.signinRow{
+    margin-right: 5%;
 }
