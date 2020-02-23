@@ -1,24 +1,30 @@
 {% if msg %}
-	<script>
-	    alert('{{msg}}')
-	</script>
-	{% endif %}
-	
-	<html lang="en">
-	<head>
+<script>
+	alert('{{msg}}')
+</script>
+{% endif %}
+
+<html lang="en">
+
+<head>
 	<meta charset="UTF-8">
 	<title>Sign</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-	</head>
-	<body>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+		crossorigin="anonymous"></script>
+</head>
+
+<body>
 	<form action="/postsign/" method="post">
-	{% csrf_token %}
-	Email :
-	<input type="email" name="email">
-	Password:
-	<input type="password" name="pass">
-	<input type="submit" value="SignIn">
+		{% csrf_token %}
+		Email :
+		<input type="email" name="email">
+		Password:
+		<input type="password" name="pass">
+		<input type="submit" value="SignIn">
 	</form>
-	</body>
-	</html>
+</body>
+
+</html>
