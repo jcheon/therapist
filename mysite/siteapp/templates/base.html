@@ -23,33 +23,59 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang='en'>
-    <head>
-        <title>Website</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="{% static "css/app.css" %}">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
-    </head>
 
-    <body>
-        <ul class="nav" id="navbar">
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    Home
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Item1</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Item2</a>
-            </li>
-        </ul>
+<head>
+    <title>Website</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/css/app.css">
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Skyduling</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="container float-sm-left">
+
+            </div>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">HELP</a>
+                </li>
+                <li>
+                    <a class ="nav-link"><span  class = "glyphicon glyphicon-briefcase dropdown-toggle"> <i class="fas fa-band-aid">icon here</i>
+                    </span> </a>
+                </li>
+                <li class="nav-item">
+                    <button class = "btn btn-primary">LOG IN</button>
+                </li>
+            </ul>
+            
+        </div>
+    </nav>
     {% block content %}
 
 
 
     {% endblock content %}
 
-    </body>
+</body>
+
 </html>
