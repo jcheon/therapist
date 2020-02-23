@@ -6,7 +6,7 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-    # path('admin/', admin.site.urls),
-    # path('$/', views.signIn),
-    # path('postsign/', views.postsign),
+    path('admin/', admin.site.urls),
+    path('$/', views.signIn),
+    path('postsign/', views.postsign),
 ]

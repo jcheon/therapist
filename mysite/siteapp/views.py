@@ -14,6 +14,8 @@ config = {
 'messagingSenderId': "955699483811",
 'appId': "1:955699483811:web:69019444836d98e8641b16",
 }
+
+
 firebase = pyrebase.initialize_app(config)
 auth = firebase.auth()
 
@@ -32,8 +34,7 @@ def postsign(request):
         return render(request,"signIn.html",{"msg":message})
 
     print(user)
-    return render(request, "welcome.html",{"e":email})
-
+    return render(request, "welcome.html",{"e":email})\
 
 def index(request):
     context={
