@@ -16,3 +16,6 @@ h1 {
 #navbar li a:hover {
     color: #4299E1;
 }
+.myBox {
+    border-radius: 1px;
+}

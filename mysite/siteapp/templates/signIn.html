@@ -17,14 +17,28 @@
 </head>
 
 <body>
-	<form action="/postsign/" method="post">
-		{% csrf_token %}
-		Email :
-		<input type="email" name="email">
-		Password:
-		<input type="password" name="pass">
-		<input type="submit" value="SignIn">
-	</form>
+	<div class="container-sm" class="myBox">
+		
+
+		</div>
+		<form action="/postsign/" method="post">
+			<div class="row">
+				{% csrf_token %}
+				Email :
+				<input type="email" name="email">
+			</div>
+			<div class="row">
+				Password:
+				<input type="password" name="pass">
+			</div>
+			<div class="row">
+				<button class="btn btn-primary">Sign in</button>
+			</div>
+			
+		</form>
+	</div>
+	
+	
 </body>
 
 </html>
